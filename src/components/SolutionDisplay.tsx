@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { ArrayVisualization } from "@/components/ArrayVisualization";
@@ -9,7 +8,7 @@ import {
   ResizablePanel, 
   ResizablePanelGroup 
 } from "@/components/ui/resizable";
-import { MessageCircle, PuzzlePiece } from "lucide-react";
+import { MessageCircle, Puzzle } from "lucide-react";
 
 interface SolutionDisplayProps {
   code: string;
@@ -126,14 +125,14 @@ export function SolutionDisplay({
                   <h3 className="text-lg font-medium mb-4">Similar problems</h3>
                   <div className="space-y-2">
                     <div className="flex items-start gap-2 p-2 hover:bg-muted rounded-md cursor-pointer">
-                      <PuzzlePiece className="h-4 w-4 mt-1 text-primary" />
+                      <Puzzle className="h-4 w-4 mt-1 text-primary" />
                       <div>
                         <h4 className="font-medium">Two Sum Variation</h4>
                         <p className="text-sm text-muted-foreground">Find three numbers that add up to a given target</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 p-2 hover:bg-muted rounded-md cursor-pointer">
-                      <PuzzlePiece className="h-4 w-4 mt-1 text-primary" />
+                      <Puzzle className="h-4 w-4 mt-1 text-primary" />
                       <div>
                         <h4 className="font-medium">Kadane's Algorithm</h4>
                         <p className="text-sm text-muted-foreground">Find the maximum subarray sum using dynamic programming</p>
